@@ -6,26 +6,30 @@ function getSecondNumber() {
     return parseInt(document.getElementById('number2').value);
 }
 
+function updateAnswer(answer) {
+    document.getElementById("answer").innerHTML = answer;
+}
+
 function add() {
     let add = getFirstNumber() + getSecondNumber();
-    return document.getElementById("answer").innerHTML = add;
+    updateAnswer(add);
 }
 
 function subtraction() {
     let subtraction = getFirstNumber() - getSecondNumber();
-    return document.getElementById("answer").innerHTML = subtraction;
+    updateAnswer(subtraction);
 }
 
 function multiply() {
     let multiply = getFirstNumber() * getSecondNumber();
-    return document.getElementById("answer").innerHTML = multiply;
+    updateAnswer(multiply);
 }
 
 function divide() {
     let divide = getFirstNumber() / getSecondNumber();
-    return document.getElementById("answer").innerHTML = divide;
+    updateAnswer(divide);
 }
 
 function blank() {
-    return document.getElementById("answer").innerHTML = '';
+    updateAnswer('');
 }
