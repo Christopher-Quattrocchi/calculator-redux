@@ -11,23 +11,23 @@ function updateAnswer(answer) {
 }
 
 function add() {
-    let add = getFirstNumber() + getSecondNumber();
-    updateAnswer(add);
+    const additionResult = getFirstNumber() + getSecondNumber();
+    updateAnswer(additionResult);
 }
 
 function subtraction() {
-    let subtraction = getFirstNumber() - getSecondNumber();
-    updateAnswer(subtraction);
+    const subtractionResult = getFirstNumber() - getSecondNumber();
+    updateAnswer(subtractionResult);
 }
 
 function multiply() {
-    let multiply = getFirstNumber() * getSecondNumber();
-    updateAnswer(multiply);
+    const multiplicationResult = getFirstNumber() * getSecondNumber();
+    updateAnswer(multiplicationResult);
 }
 
 function divide() {
-    let divide = getFirstNumber() / getSecondNumber();
-    updateAnswer(divide);
+    const divisionResult = getFirstNumber() / getSecondNumber();
+    updateAnswer(divisionResult);
 }
 
 function blank() {
