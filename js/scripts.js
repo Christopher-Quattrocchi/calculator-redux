@@ -33,3 +33,24 @@ function divide() {
 function blank() {
     updateAnswer('');
 }
+
+function init() {
+    const addButton = document.getElementById('add-button');
+    addButton.addEventListener('click', add);
+
+    const subtractButton = document.getElementById('subtract-button');
+    subtractButton.addEventListener('click', subtraction);
+
+    const multiplyButton = document.getElementById('multiply-button');
+    multiplyButton.addEventListener('click', multiply);
+
+    const divideButton = document.getElementById('divide-button');
+    divideButton.addEventListener('click', divide);
+
+    const clearButton = document.getElementById('clear-button');
+    clearButton.addEventListener('click', blank);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+   init();
+});
