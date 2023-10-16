@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+.calculator {
+    width: 25%;
+    height: 50%;
+    margin: auto;
+    background-color: #EEEEEE;
+    padding: 1%;
+}
+
+.answer {
+    margin: 5% 0;
+    display: flex;
+    flex-direction: row;
+}

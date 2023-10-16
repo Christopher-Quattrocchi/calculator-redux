@@ -8,20 +8,27 @@
 </head>
 
 <body>
-    <h1>Calculator</h1>
-    <form>
-        <p>First Number</p>
-        <input type="number" name="number1" id="number1">
-        <p>Operation</p>
-        <p>Second Number</p>
-        <input type="number" name="number2" id="number2">
-        <button type="button" onclick="multiply()">Multiply!</button>
-        <button type="button" onclick="divide()">Divide!</button>
-        <button type="button" onclick="subtraction()">Subtract!</button>
-        <button type="button" onclick="add()">Add!</button>
-        <button type="button" onclick="blank()">Clear</button>
-    </form>
-    <textarea id="answer" rows="1" cols="20" readonly> </textarea>
+    <div class="calculator">
+        <h1>Calculator</h1>
+            <form>
+                <p>First Number</p>
+                <input type="number" name="number1" id="number1">
+                <p>Operation</p>
+                <p>Second Number</p>
+                <input type="number" name="number2" id="number2">
+                <div class="operations">
+                    <button type="button" onclick="multiply()">Multiply!</button>
+                    <button type="button" onclick="divide()">Divide!</button>
+                    <button type="button" onclick="subtraction()">Subtract!</button>
+                    <button type="button" onclick="add()">Add!</button>
+                    <button type="button" onclick="blank()">Clear</button>
+                </div>
+            </form>
+            <div class="answer">
+                <p>Result:</p>
+                <textarea id="answer" rows="1" cols="20" readonly> </textarea>
+            </div>
+    </div>
 </body>
 
 </html>
