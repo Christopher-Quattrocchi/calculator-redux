@@ -1,20 +1,28 @@
+function getFirstNumber() {
+    return parseInt(document.getElementById('number1').value);
+}
+
+function getSecondNumber() {
+    return parseInt(document.getElementById('number2').value);
+}
+
 function add() {
-    let add = parseInt(document.getElementById('number1').value) + parseInt(document.getElementById('number2').value);
+    let add = getFirstNumber() + getSecondNumber();
     return document.getElementById("answer").innerHTML = add;
 }
 
 function subtraction() {
-    let subtraction = parseInt(document.getElementById('number1').value) - parseInt(document.getElementById('number2').value);
+    let subtraction = getFirstNumber() - getSecondNumber();
     return document.getElementById("answer").innerHTML = subtraction;
 }
 
 function multiply() {
-    let multiply = parseInt(document.getElementById('number1').value) * parseInt(document.getElementById('number2').value);
+    let multiply = getFirstNumber() * getSecondNumber();
     return document.getElementById("answer").innerHTML = multiply;
 }
 
 function divide() {
-    let divide = parseInt(document.getElementById('number1').value) / parseInt(document.getElementById('number2').value);
+    let divide = getFirstNumber() / getSecondNumber();
     return document.getElementById("answer").innerHTML = divide;
 }
 
