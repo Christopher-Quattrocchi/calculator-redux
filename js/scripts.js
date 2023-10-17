@@ -32,6 +32,8 @@ function divide() {
 
 function blank() {
     updateAnswer('');
+    document.getElementById('number1').value = '';
+    document.getElementById('number2').value = '';
 }
 
 function init() {

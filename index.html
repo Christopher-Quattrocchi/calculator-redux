@@ -3,23 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Calculator</title>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/scripts.js" defer></script>
-    <title>Calculator</title>
 </head>
 
 <body>
     <div class="calculator">
         <div class="inputs">
-            <input type="number" id="number1" placeholder="Enter first number">
-            <input type="number" id="number2" placeholder="Enter second number">
+            <input type="number" id="number1" placeholder="First number">
+
+            <div class="operators">
+                <button type="button" id="add-button">+</button>
+                <button type="button" id="subtract-button">−</button>
+                <button type="button" id="multiply-button">×</button>
+                <button type="button" id="divide-button">÷</button>
+            </div>
+
+            <input type="number" id="number2" placeholder="Second number">
         </div>
+
         <textarea id="answer" rows="1" readonly></textarea>
-        <div class="buttons">
-            <button type="button" id="add-button">+</button>
-            <button type="button" id="subtract-button">−</button>
-            <button type="button" id="multiply-button">×</button>
-            <button type="button" id="divide-button">÷</button>
+
+        <div class="actions">
             <button type="button" id="clear-button">Clear</button>
         </div>
     </div>

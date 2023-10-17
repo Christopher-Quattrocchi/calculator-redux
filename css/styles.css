@@ -17,13 +17,13 @@ body {
 
 .inputs {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
 input {
-    width: 45%;
+    flex: 1;
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px;
     font-size: 18px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -42,15 +42,15 @@ textarea#answer {
     resize: none;
 }
 
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.operators {
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
 button {
     cursor: pointer;
-    padding: 20px;
+    padding: 10px;
     font-size: 18px;
     border: none;
     background-color: #f0f0f0;
@@ -72,7 +72,9 @@ button:focus {
 }
 
 #clear-button {
-    grid-column: span 3;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
     background-color: #ff4c4c;
     color: #fff;
 }
